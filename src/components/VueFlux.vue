@@ -339,6 +339,14 @@
 </script>
 
 <style lang="scss">
+  [dir="rtl"] {
+      .vue-flux {
+        .flux-controls {
+          flex-direction: row-reverse;
+        }
+      }
+  }
+
 	.vue-flux {
 		position: relative;
 
@@ -361,7 +369,7 @@
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
-			z-index: 45;
+			z-index: 3;
 
 			.remainder {
 				flex-basis: 50%;
